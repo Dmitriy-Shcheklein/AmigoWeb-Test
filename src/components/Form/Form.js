@@ -1,6 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { checkAllСonditions } from '../../Utils/AuxiliaryFunc';
+import {
+  checkAllСonditions, validData,
+  regMail, regName, regPhone
+} from '../../Utils/AuxiliaryFunc';
 import FormButton from './FormButton';
 import FormCheckbox from './FormCheckbox';
 import FormLanguage from './FormLanguage';
@@ -58,17 +61,6 @@ const Form = () => {
   const onChooseLanguage = (idx) => {
     setSelectedLang(language[idx]);
     setOpenList(!openList);
-  }
-
-  const regName = /^[a-zа-я\p{L} -]+$/i;
-  const regMail = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
-  const regPhone = /^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/;
-
-  const validData = (data, regExp) => {
-    let valid = true;
-    if (data === '') return valid;
-    valid = regExp.test(data);
-    return valid;
   }
 
   const checkName = validData(name, regName);
