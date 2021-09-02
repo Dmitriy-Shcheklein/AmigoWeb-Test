@@ -1,0 +1,41 @@
+.languageList-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  font-family: 'IBM Plex Size Normal';
+  font-size: 16px;
+  color: #756F86;
+  background-color: #ffffff;
+  border: 2px solid #DBE2EA;
+  margin-top: 4px;
+  border-radius: 6px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.languageList-wrapper li {
+  width: 100%;
+  height: 44px;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.languageList-wrapper li:hover {
+  background-color: #EBF4F8;
+  cursor: default;
+}
+
+.languageList-wrapper ul {
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  height: 88%;
+}
+

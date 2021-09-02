@@ -1,0 +1,41 @@
+.checkbox-wrapper {
+  margin-bottom: 37px;
+  font-family: 'IBM Plex Size Normal';
+  color: #756F86;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox-wrapper a {
+  text-decoration: none;
+  color: #0880AE;
+}
+
+.checkbox-wrapper>span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.checkbox-wrapper>span::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #DBE2EA;
+  border-radius: 4px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.checkbox-wrapper>input:checked+span::before {
+  border: 2px solid #0880AE;
+  background-image: url(../../../img/check.png);
+}
