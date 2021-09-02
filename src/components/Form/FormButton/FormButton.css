@@ -19,3 +19,7 @@
   background-color: #DBE2EA;
   color: #B1B5BF;
 }
+
+.button-wrapper input:active {
+  border: 2px solid rgba(44, 39, 56, 0.86)
+}
